@@ -333,8 +333,8 @@ section {
     flex-direction: column;
 }
 
-.article-container{
-    display: flex;
+.article-container {
+  display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
@@ -342,16 +342,18 @@ section {
     justify-content: space-around;
 }
 
-article{
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+.article-container article {
+  display: flex;
+  align-items: center; /* Align icon and text on the same Y-axis */
+  gap: 1rem;
+  width: calc(50% - 0.5rem); /* For two-column layout, optional */
 }
 
-article .icon{
-    cursor: default;
+.article-container .icon {
+  width: 40px;
+  height: 40px;
 }
+
 
 /* PROJECT SECTION */
 
